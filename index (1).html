@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing Page sobre a história e o ciclo do ouro em Paranaguá, a primeira cidade do Paraná.">
+    <title>Ouro em Paranaguá - História e Inclusão Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Botão de pular para o conteúdo (Acessibilidade) -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <header role="banner">
+        <div class="container header-content">
+            <div class="logo">
+                <h1>Ouro em <span>Paranaguá</span></h1>
+            </div>
+            
+            <nav role="navigation" aria-label="Menu Principal">
+                <ul class="nav-links">
+                    <li><a href="#historia">História</a></li>
+                    <li><a href="#ciclo">O Ciclo</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#curiosidades">Curiosidades</a></li>
+                </ul>
+            </nav>
+
+            <div class="accessibility-controls">
+                <button id="increase-font" aria-label="Aumentar tamanho da fonte">A+</button>
+                <button id="decrease-font" aria-label="Diminuir tamanho da fonte">A-</button>
+                <button id="toggle-contrast" aria-label="Alternar alto contraste">
+                    <span class="contrast-icon" aria-hidden="true">◐</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero-container">
+                <div class="hero-text scroll-reveal">
+                    <h2 id="hero-title">Onde o Brasil descobriu seu primeiro brilho.</h2>
+                    <p>Conheça a história das primeiras minas de ouro do Brasil, localizadas no litoral paranaense antes mesmo das famosas jazidas de Minas Gerais.</p>
+                    <a href="#historia" class="btn-primary">Explorar História</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Content: Cards Section -->
+        <section id="historia" class="cards-section container" aria-labelledby="historia-title">
+            <h2 id="historia-title" class="section-title scroll-reveal">Marcos Históricos</h2>
+            <div id="history-cards-container" class="grid-layout">
+                <!-- Injetado via JS -->
+            </div>
+        </section>
+
+        <!-- Carousel Section -->
+        <section id="ciclo" class="carousel-section" aria-labelledby="carousel-title">
+            <div class="container">
+                <h2 id="carousel-title" class="section-title scroll-reveal">O Ciclo do Ouro no Litoral</h2>
+                <div class="carousel-container scroll-reveal">
+                    <div class="carousel-track" id="carousel-track" role="region" aria-live="polite">
+                        <!-- Injetado via JS -->
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-btn prev" aria-label="Slide anterior">❮</button>
+                        <button class="carousel-btn next" aria-label="Próximo slide">❯</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expandable/Accordion Section -->
+        <section id="curiosidades" class="accordion-section container" aria-labelledby="curiosidades-title">
+            <h2 id="curiosidades-title" class="section-title scroll-reveal">Perguntas e Curiosidades</h2>
+            <div id="accordion-container" class="accordion">
+                <!-- Injetado via JS -->
+            </div>
+        </section>
+
+        <!-- Tabs Section -->
+        <section id="galeria" class="tabs-section container" aria-labelledby="galeria-title">
+            <h2 id="galeria-title" class="section-title scroll-reveal">Patrimônio de Paranaguá</h2>
+            <div class="tabs-container scroll-reveal">
+                <div role="tablist" aria-label="Categorias de Patrimônio" class="tab-buttons">
+                    <button role="tab" aria-selected="true" aria-controls="tab-panel-1" id="tab-1">Arquitetura</button>
+                    <button role="tab" aria-selected="false" aria-controls="tab-panel-2" id="tab-2" tabindex="-1">Porto</button>
+                    <button role="tab" aria-selected="false" aria-controls="tab-panel-3" id="tab-3" tabindex="-1">Natureza</button>
+                </div>
+                <div id="tab-content-container">
+                    <!-- Injetado via JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container footer-content">
+            <p>&copy; 2026 Ouro em Paranaguá. Desenvolvido com foco em Acessibilidade e UX.</p>
+            <div class="footer-links">
+                <a href="#">Privacidade</a>
+                <a href="#">Termos de Uso</a>
+                <a href="#">Contato</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
